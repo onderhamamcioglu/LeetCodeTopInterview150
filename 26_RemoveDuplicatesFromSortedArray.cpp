@@ -12,7 +12,7 @@ class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
         int k = 0; //index of current element and counter of unique elements
-        for (const int num : nums)
+        for (int num : nums)
             if (k < 1 || num != nums[k - 1])
                 nums[k++] = num; //next element becomes current element
         return k;
