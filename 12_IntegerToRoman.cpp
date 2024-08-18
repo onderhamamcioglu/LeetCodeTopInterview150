@@ -34,15 +34,6 @@ Note: 49 is not 1 (I) less of 50 (L) because the conversion is based on decimal 
 
  */
 class Solution {
-private:
- int digit(int number) {
-  int count = 0;
-  while(number != 0) {
-   number = number / 10;
-   count++;
-  }
-  return count;
- }
 public:
  string intToRoman(int num) {
   map<int, string> valueMap;
